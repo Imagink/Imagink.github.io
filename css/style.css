@@ -1,0 +1,49 @@
+body {
+  background: #22303c;
+   background: url(http://img02.deviantart.net/4442/i/2016/312/5/7/untitled_3_by_peachyfiesta-danskju.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picture {
+  width: 456px;
+  height: 300px;
+  background: url("http://img14.deviantart.net/450c/i/2016/267/4/0/box_2_by_peachyfiesta-dair8qz.png");
+  background-size: cover;
+  border: 20px solid #22303c;
+  margin: 40px auto;
+  border-bottom-color: #5f7a93;
+  border-left-color: #7f9baf;
+  border-right-color: #3f5267;
+}
+
+h2, h1 {
+  color: #f0ebe6;
+  font-family: arial;
+  padding: 0px 218px
+}
+
+#text {
+  text-align: center; 
+}
+
+#next2, #next3, #next4, #next5, #next6, #next7 {
+  display: none;
+}
+
+.button {
+  text-decoration: none;
+  font-family: arial;
+  background: #5f7a93;
+  color: #f0ebe6;
+  padding: 10px 30px;
+}
+
+.nextholder {
+  text-align: right;
+  padding-right: 10%;
+  padding-top: 10%;
+  position: fixed;
+  bottom: 30%;
+  right: 2%;
+}
