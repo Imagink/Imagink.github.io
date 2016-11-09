@@ -67,6 +67,8 @@ $(document).ready(function() {
     
     // Change the span with id "welcomeName" to the name
     $(".playername").html(name);
+    $("#submitname").hide();
+        $("#tostart").show();
   });
 
   
