@@ -132,7 +132,3 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 #confirm {
   display:none;
 }
-
-#tostart {
-  display: none;
-}

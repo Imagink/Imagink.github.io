@@ -2,21 +2,21 @@ $(document).ready(function() {
 
   $("#next").click(function() {
     //$("#text2").show();  <--saving for later in case
-    $("#text").html("There once was a race of intelligent beings. Their world was running out of supplies so four of their top scientists sent out thousands and thousands of pods into the universe, filled with robots and cyborgs with the mission to scavenge the world.");
+    $("#text").html("There once was a race of intelligent beings. Their world was running out of supplies so four of their top scientists sent out thousands of pods into the universe, filled with robots and cyborgs with the mission to scavenge the world.");
     $(".picture").css("background","url('https://imagink.github.io/img/2.png')");
     $("#next").hide();
     $("#next2").show();
   });
 
   $("#next2").click(function() {
-    $("#text").html("One pod got knocked off course, and sent crashing into a planet, cutting the top half clean off.");
+    $("#text").html("One pod got knocked off course");
     $(".picture").css("background","url('https://imagink.github.io/img/3.png')");
     $("#next2").hide();
     $("#next3").show();
   });
 
   $("#next3").click(function() {
-    $("#text").html("One pod got knocked off course, and sent crashing into a planet, cutting the top half clean off.");
+    $("#text").html("And was sent crashing into a planet, cutting the top half clean off.");
     $(".picture").css("background","url('https://imagink.github.io/img/4.png')");
     $("#next3").hide();
     $("#next4").show();
@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
 
   $("#next6").click(function() {
-    $("#text").html("One day, a female cyborg scientist made a grave mistake, dooming her entire civilization to the cause of a potion mishap. And as night hit, the entire population disappeared from the face of the world.");
+    $("#text").html("But one day, a female cyborg scientist made a grave mistake, dooming her entire civilization to the cause of a potion mishap. And as night hit, the entire population disappeared from the face of the world.");
     $(".picture").css("background","url('https://imagink.github.io/img/7.png')");
     $("#next6").hide();
     $("#next7").show();
@@ -67,9 +67,9 @@ $(document).ready(function() {
     
     // Change the span with id "welcomeName" to the name
     $(".playername").html(name);
-    $("#submitname").hide();
-        $("#tostart").show();
   });
+
+   //use <div class="playername"></div> to show player name
 
   
  $("#genderarrow").click(function() {
