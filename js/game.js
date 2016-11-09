@@ -45,8 +45,9 @@ $(document).ready(function() {
 
   $("#next7").click(function() {
     $("#text").html("Now, we join four simple villagers. In their journey, to the Underneath.");
-    $(".picture").css("background","url('http://img14.deviantart.net/bd2b/i/2016/267/6/3/box_4_by_peachyfiesta-dair9c4.png')");
+    $(".picture").css("background","url('http://img07.deviantart.net/4069/i/2016/313/e/d/beta_picture_by_peachyfiesta-danvr1y.png')");
     $("#next7").hide();
+     $("#next8").show();
   });
 
 });
