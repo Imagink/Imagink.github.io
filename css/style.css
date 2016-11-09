@@ -8,7 +8,7 @@ body {
 .picture {
   width: 456px;
   height: 300px;
-  background: url("http://img14.deviantart.net/450c/i/2016/267/4/0/box_2_by_peachyfiesta-dair8qz.png");
+  background: url("https://imagink.github.io/img/1.png");
   background-size: cover;
   border: 20px solid #22303c;
   margin: 40px auto;
@@ -27,7 +27,7 @@ h2, h1 {
   text-align: center; 
 }
 
-#next2, #next3, #next4, #next5, #next6, #next7 {
+#next2, #next3, #next4, #next5, #next6, #next7, #next8, #next9 {
   display: none;
 }
 
