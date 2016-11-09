@@ -58,4 +58,33 @@ $(document).ready(function() {
      $("#next9").show();
   });
 
+   $("#submitname").click(function() {
+    //Create a variables for holding our information
+    var name;
+
+    // Set it equal to what's inside the input field with id="name"
+    name = document.getElementById("name").value;
+    
+    // Change the span with id "welcomeName" to the name
+    $(".playername").html(name);
+  });
+
+  
+ $("#genderarrow").click(function() {
+      //Create a variables for holding our information
+     var gender;
+   
+    if ($("input[name='gender']:checked").val()) {
+         gender=$("input[name='gender']:checked").val()
+        // show user what they selected
+        $(".poop").html(gender);
+        $("#genderarrow").hide();
+        $("#confirm").show();
+        return false;
+    }
+    else {
+      alert('Choose your gender first!');
+    }
+ });
+
 });

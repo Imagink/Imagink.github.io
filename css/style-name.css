@@ -1,0 +1,26 @@
+#namebody {
+  background: url("http://img00.deviantart.net/cdb8/i/2016/313/f/b/choose_your_name__by_peachyfiesta-danvreb.png");
+    background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+   cursor: pointer;
+  background:  url("http://orig09.deviantart.net/af9e/f/2016/313/5/1/next_by_peachyfiesta-danvp97.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  padding: 20px 47px;
+  border: none;
+  margin-left: 5px;
+}
+
+.enter{
+  text-align: center;
+  margin: 20% auto;
+}
+
+input[type=text] {
+  width: 30%;
+  background: #f0ebe6;
+  border: 5px solid #f0ebe6;
+}

@@ -1,0 +1,37 @@
+body {
+  color: #fff;
+  background: url("http://img00.deviantart.net/f77d/i/2016/313/a/b/gender__1_by_peachyfiesta-danvrhb.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input[type="radio"] {
+  background: url("http://pre07.deviantart.net/4abb/th/pre/i/2016/313/6/0/leonainbox_copy_by_peachyfiesta-danwg46.png");
+}
+
+input[type="radio"]:checked + label {
+  background: #EE6C24;
+}
+
+.box {
+  width: 300px;
+  display: inline;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+}
+
+fem {
+  display: inline-block;
+}
+
+me {
+  display: inline-block;
+}
