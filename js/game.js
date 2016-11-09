@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   $("#next4").click(function() {
-    $("#text").html("Eventually they got used to thinking for themselves and many years later a new civilization was built.");
+    $("#text").html("Eventually, they got used to thinking for themselves and many years later a new civilization was built.");
     $(".picture").css("background","url('http://pre07.deviantart.net/5e28/th/pre/i/2016/311/0/e/alchemy_accident_by_peachyfiesta-dankzet.png')");
     $("#next4").hide();
     $("#next5").show();
