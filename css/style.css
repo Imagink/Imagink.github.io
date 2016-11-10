@@ -1,6 +1,12 @@
-body {
-  background: #22303c;
+#history {
    background: url(http://img02.deviantart.net/4442/i/2016/312/5/7/untitled_3_by_peachyfiesta-danskju.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#genderbody {
+  color: #fff;
+  background: url("http://img00.deviantart.net/f77d/i/2016/313/a/b/gender__1_by_peachyfiesta-danvrhb.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -9,6 +15,12 @@ body {
   background: url("http://img00.deviantart.net/cdb8/i/2016/313/f/b/choose_your_name__by_peachyfiesta-danvreb.png");
     background-size: cover;
   background-repeat: no-repeat;
+}
+
+#gamebody {
+  background: url("http://i39.servimg.com/u/f39/17/72/50/13/untitl10.jpg");
+    background-size: cover;
+  background-repeat: repeat-x;
 }
 
 .enter{
@@ -76,13 +88,6 @@ button {
   right: 2%;
 }
 
-#genderbody {
-  color: #fff;
-  background: url("http://img00.deviantart.net/f77d/i/2016/313/a/b/gender__1_by_peachyfiesta-danvrhb.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 input[type="radio"] {
   background: url("http://pre07.deviantart.net/4abb/th/pre/i/2016/313/6/0/leonainbox_copy_by_peachyfiesta-danwg46.png");
 }
@@ -143,4 +148,16 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 
 .f {
   color: red;
+}
+
+.leona {
+  width: 110px;
+  height: 285px;
+  background: url("https://imagink.github.io/img/front.png");
+  background-size: cover;
+  margin-top: 500px;
+}
+
+/*img {
+  width: 30%
 }

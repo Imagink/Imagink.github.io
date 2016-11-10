@@ -72,24 +72,57 @@ $(document).ready(function() {
    //use <div class="playername"></div> to show player name
 
   
- $("#genderarrow").click(function() {
-      //Create a variables for holding our information
-     var gender;
-   
-    if ($("input[name='gender']:checked").val()) {
-         gender=$("input[name='gender']:checked").val()
-        // show user what they selected
-        $(".sex").html(gender);
-    if (gender=="female") {
-        $(".sex").css("color", "#CF74AE")
+   $("#genderarrow").click(function() {
+        //Create a variables for holding our information
+       var gender;
+     
+      if ($("input[name='gender']:checked").val()) {
+           gender=$("input[name='gender']:checked").val()
+          // show user what they selected
+          $(".sex").html(gender);
+      if (gender=="female") {
+          $(".sex").css("color", "#CF74AE")
+      }
+          $("#genderarrow").hide();
+          $("#confirm").show();
+          return false;
+      }
+      else {
+        alert('Choose your gender first!');
+      }
+   });
+
+  var Speed = randomIntFromInterval(50,50);
+  $(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+
+        break;
+
+        case 38: // up
+        break;
+
+        case 39: // right
+        $('#leona').animate({
+          'marginLeft' : "+="+Speed+"px" //moves right
+        });
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetside.gif')");
+        $(".leona").css("background-size","110px 285px");
+        break;
+
+        break;
+
+        case 40: // down
+        break;
+
+        default: return; // exit this handler for other keys
     }
-        $("#genderarrow").hide();
-        $("#confirm").show();
-        return false;
-    }
-    else {
-      alert('Choose your gender first!');
-    }
- });
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
+  function randomIntFromInterval(min,max)
+  {
+      return Math.floor(Math.random()*(max-min+1)+min);
+  }
 
 });
