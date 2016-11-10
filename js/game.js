@@ -96,23 +96,42 @@ $(document).ready(function() {
   $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
+        $('#leona').animate({
+          'marginLeft' : "-="+Speed+"px" //moves left
+        });
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetleft.gif')");
+        $(".leona").css("background-size","110px 285px");
+        break;
 
         break;
 
         case 38: // up
+        $('#leona').animate({
+          'marginTop' : "-="+Speed+"px" //moves up
+        });
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetback.gif')");
+        $(".leona").css("background-size","110px 285px");
+        break;
+
         break;
 
         case 39: // right
         $('#leona').animate({
           'marginLeft' : "+="+Speed+"px" //moves right
         });
-        $(".leona").css("background","url('https://imagink.github.io/img/trialthatidoubt.gif')");
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetside.gif')");
         $(".leona").css("background-size","110px 285px");
         break;
 
         break;
 
         case 40: // down
+        $('#leona').animate({
+          'marginTop' : "+="+Speed+"px" //moves down
+        });
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetshort.gif')");
+        $(".leona").css("background-size","110px 285px");
+        break;
         break;
 
         default: return; // exit this handler for other keys
