@@ -119,7 +119,7 @@ $(document).ready(function() {
         $('#leona').animate({
           'marginLeft' : "+="+Speed+"px" //moves right
         });
-        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetside.gif')");
+        $(".leona").css("background", "url('https://imagink.github.io/img/spritesheetside.gif')");
         $(".leona").css("background-size","110px 285px");
         break;
 
