@@ -333,7 +333,7 @@
   function Player(x, y) {
     this.dy        = 0;
     this.gravity   = 1;
-    this.speed     = 3;
+    this.speed     = 6;
     this.jumpDy    = -10;
     this.isJumping = false;
     this.width     = 201;
