@@ -94,13 +94,13 @@ input[type="radio"]:checked + label {
 .box1 {
   width: 500px;
   display: inline;
-  padding: 50px 170px
+  padding: 100px 270px
 }
 
 .box2 {
   width: 500px;
   display: inline;
-  padding: 50px 40px
+  padding: 40px 40px
 }
 
 label > input{ /* HIDE RADIO */
@@ -126,9 +126,21 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   font-size: 20px;
   font-family: arial;
   display: block;
-  margin-right: 100px
+  margin-right: 100px;
+}
+
+.selectedtext .sex {
+  color: #4891C6;
 }
 
 #confirm {
   display:none;
+}
+
+.m {
+  color: blue;
+}
+
+.f {
+  color: red;
 }

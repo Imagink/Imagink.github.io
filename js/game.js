@@ -79,7 +79,10 @@ $(document).ready(function() {
     if ($("input[name='gender']:checked").val()) {
          gender=$("input[name='gender']:checked").val()
         // show user what they selected
-        $(".poop").html(gender);
+        $(".sex").html(gender);
+    if (gender=="female") {
+        $(".sex").css("color", "#CF74AE")
+    }
         $("#genderarrow").hide();
         $("#confirm").show();
         return false;
