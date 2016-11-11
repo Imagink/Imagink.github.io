@@ -150,51 +150,41 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   color: red;
 }
 
-.leona {
-  width: 110px;
-  height: 285px;
-  background: url("https://imagink.github.io/img/front.png");
-  background-size: cover;
-  /*background-position: 0px 193px;
-  background-repeat: no-repeat;*/
-  margin-top: 500px;
-  position: absolute;
-  display: inline-block;
-}
-
 /*img {
   width: 30%
 }*/
 
 .enemy {
+  cursor: pointer;
   width: 188px;
   height: 325px;
   background: url("https://8bitgamedesign.files.wordpress.com/2013/04/hobo-sprite.png");
    background-size: cover;
    position: fixed;
-   left: 29%;
-   bottom: 20%;
+   left: 85%;
+   bottom: 29%;
 }
 
 .deadenemy {
   width: 188px;
   height: 325px;
-  background: url("http://orig00.deviantart.net/825e/f/2012/363/0/c/angel_of_death_sprite_by_blzofozz-d5pm43h.png");
+  background: url("http://rs651.pbsrc.com/albums/uu236/416o/explosion.gif~c200");
    background-size: cover;
    position: fixed;
-   left: 29%;
-   bottom: 20%;
+   left: 85%;
+   bottom: 29%;
    display: none;
 }
 
 .placeholder {
+  cursor: pointer;
   width: 210px;
   height: 210px;
   background: url("https://imagink.github.io/img/placementholder.png");
    background-size: cover;
    position: fixed;
-   left: 55%;
-   bottom: 5%;
+   left: 9%;
+   bottom: 31%;
 }
 
 .placeholdertext {
@@ -223,5 +213,22 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
    position: fixed;
    left: 78%;
    bottom: 19%;
+   display: none;
+}
+
+.leona {
+  width: 110px;
+  height: 285px;
+  background: url("https://imagink.github.io/img/front.png");
+  background-size: cover;
+  /*background-position: 0px 193px;
+  background-repeat: no-repeat;*/
+  margin-top: 500px;
+  position: absolute;
+  display: inline-block;
+}
+
+.front {
+  background: url("https://imagink.github.io/img/front.png") !important;
 }
 
