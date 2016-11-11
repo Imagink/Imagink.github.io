@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    var name;
+    var gender;
+
   $("#next").click(function() {
     //$("#text2").show();  <--saving for later in case
     $("#text").html("There once was a race of intelligent beings. Their world was running out of supplies so four of their top scientists sent out thousands of pods into the universe, filled with robots and cyborgs with the mission to scavenge the world.");
@@ -60,7 +63,7 @@ $(document).ready(function() {
 
    $("#submitname").click(function() {
     //Create a variables for holding our information
-    var name;
+    //var name;
 
     // Set it equal to what's inside the input field with id="name"
     name = document.getElementById("name").value;
@@ -74,7 +77,7 @@ $(document).ready(function() {
   
    $("#genderarrow").click(function() {
         //Create a variables for holding our information
-       var gender;
+       //var gender;
      
       if ($("input[name='gender']:checked").val()) {
            gender=$("input[name='gender']:checked").val()
@@ -171,11 +174,41 @@ $(document).keydown(function(e) {
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });
 
+ //setTimeout(function(){ $("#leona").css("background","url('https://imagink.github.io/img/front.png')"); }, 1000)
+
+     function collision($div1, $div2) {
+      var x1 = $div1.offset().left;
+      var y1 = $div1.offset().top;
+      var h1 = $div1.outerHeight(true);
+      var w1 = $div1.outerWidth(true);
+      var b1 = y1 + h1;
+      var r1 = x1 + w1;
+      var x2 = $div2.offset().left;
+      var y2 = $div2.offset().top;
+      var h2 = $div2.outerHeight(true);
+      var w2 = $div2.outerWidth(true);
+      var b2 = y2 + h2;
+      var r2 = x2 + w2;
+        
+      if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) {
+        //if it is not colliding, make div2 background green
+        $("#book").css('background','green');
+        return false;
+      } 
+      else {  
+        //if it is colliding, make div2 background yellow
+        $("#book").css('background','yellow');
+        return true;
+      }
+    }
+
+window.setInterval(function() {
+    $('#result').text(collision($('#leona'), $('#book')));
+}, 200);
+
 function randomIntFromInterval(min,max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
-
- //setTimeout(function(){ $("#leona").css("background","url('https://imagink.github.io/img/front.png')"); }, 1000)
 
 });

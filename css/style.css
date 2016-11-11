@@ -158,6 +158,8 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   /*background-position: 0px 193px;
   background-repeat: no-repeat;*/
   margin-top: 500px;
+  position: absolute;
+  display: inline-block;
 }
 
 /*img {
@@ -211,5 +213,15 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   top: 71%;
   left: 0%;
   font-size: 50px;
+}
+
+.book {
+  width: 100px;
+  height: 100px;
+  background: url("http://rs292.pbsrc.com/albums/mm36/LawIiet/Death%20Note/Death_Note_by_castiboy.png~c200");
+   background-size: cover;
+   position: fixed;
+   left: 78%;
+   bottom: 19%;
 }
 
