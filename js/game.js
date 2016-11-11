@@ -92,6 +92,14 @@ $(document).ready(function() {
       }
    });
 
+   $("#placeholder").click(function() {
+    $("#placeholdertext").show();
+    });    
+
+   $("#placeholdertext").click(function() {
+    $("#placeholdertext").hide();
+    });    
+
 $(document).keydown(function(e) {
     var Speed = 50;
     var Drift = 50;

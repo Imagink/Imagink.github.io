@@ -167,11 +167,18 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   height: 210px;
   background: url("https://imagink.github.io/img/placementholder.png");
    background-size: cover;
-   margin-left: 1000px;
    position: fixed;
+   left: 55%;
+   bottom: 5%;
 }
 
 .placeholdertext {
+  width: 1832px;
+  height: 1000px;
   background: url("https://imagink.github.io/img/speech_placeholder.png");
-
+  background-size: cover;
+  position: fixed;
+  top: -5%;
+  left: 0%;
+  display: none;
 }
