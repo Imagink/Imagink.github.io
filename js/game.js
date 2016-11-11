@@ -101,6 +101,11 @@ $(document).ready(function() {
 
    $("#placeholdertext").click(function() {
     $("#placeholdertext").hide();
+    $("#playerspeech").show();
+    });    
+
+   $("#playerspeech").click(function() {
+    $("#playerspeech").hide();
     });    
 
   (function () {
