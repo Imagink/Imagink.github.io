@@ -23,6 +23,14 @@
   background-repeat: repeat-x;
 }
 
+#startscreen {
+  background: url("http://img01.deviantart.net/843f/i/2016/313/3/e/start_screen__by_peachyfiesta-danvrga.png");
+  font-family: arial;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .enter{
   text-align: center;
   margin: 20% auto;
@@ -241,4 +249,23 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   top: -5%;
   left: 0%;
   display: none;
+}
+
+.startbutton {
+  text-decoration: none;
+  font-family: arial;
+  background: #00B2A0;
+  padding: 10px 70px 10px 70px;
+  font-size: 60%;
+  color: #FFD700;
+  text-align: left;
+  margin-left: 200px
+}
+.instructionbox {
+  text-align: left;
+  display: inline-block;
+  color: #ccc;
+  font-size: 200%;
+  width: 40%;
+  border: 5px light green;
 }
