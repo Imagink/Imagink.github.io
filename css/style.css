@@ -152,7 +152,7 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 
 .leona {
   width: 110px;
-  height: 285px;+
+  height: 285px;
   background: url("https://imagink.github.io/img/front.png");
   background-size: cover;
   margin-top: 500px;
@@ -160,4 +160,18 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 
 /*img {
   width: 30%
+}*/
+
+.placeholder {
+  width: 210px;
+  height: 210px;
+  background: url("https://imagink.github.io/img/placementholder.png");
+   background-size: cover;
+   margin-left: 1000px;
+   position: fixed;
+}
+
+.placeholdertext {
+  background: url("https://imagink.github.io/img/speech_placeholder.png");
+
 }
