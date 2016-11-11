@@ -182,3 +182,24 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   left: 0%;
   display: none;
 }
+
+.enemy {
+  width: 210px;
+  height: 210px;
+  background: url("https://8bitgamedesign.files.wordpress.com/2013/04/hobo-sprite.png");
+   background-size: cover;
+   position: fixed;
+   left: 45%;
+   bottom: 5%;
+}
+
+.deadenemy {
+  width: 210px;
+  height: 210px;
+  background: url("http://orig00.deviantart.net/825e/f/2012/363/0/c/angel_of_death_sprite_by_blzofozz-d5pm43h.png");
+   background-size: cover;
+   position: fixed;
+   left: 45%;
+   bottom: 5%;
+   display: none;
+}

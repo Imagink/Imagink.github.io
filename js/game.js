@@ -100,6 +100,21 @@ $(document).ready(function() {
     $("#placeholdertext").hide();
     });    
 
+  (function () {
+  var count = 0;
+
+  $('#enemy').click(function () {
+    count += 1;
+
+    if (count == 5) {
+      // come code
+      $("#enemy").hide();
+      $("#deadenemy").show();
+      setTimeout(function(){ $("#deadenemy").hide(); }, 3020);
+    }
+  });
+})();
+
 $(document).keydown(function(e) {
     var Speed = 50;
     var Drift = 50;
