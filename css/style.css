@@ -252,20 +252,14 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 }
 
 .startbutton {
-  text-decoration: none;
-  font-family: arial;
-  background: #00B2A0;
-  padding: 10px 70px 10px 70px;
-  font-size: 60%;
-  color: #FFD700;
-  text-align: left;
-  margin-left: 200px
-}
-.instructionbox {
-  text-align: left;
-  display: inline-block;
-  color: #ccc;
-  font-size: 200%;
-  width: 40%;
-  border: 5px light green;
+ cursor: pointer;
+  background-image: url("https://imagink.github.io/Img/startbutton.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px 44px;
+  width: 284px;
+  height: 136px;
+  display: block; 
+  margin-left: 491px;
+  margin-top: 298px;
 }
