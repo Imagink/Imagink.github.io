@@ -106,6 +106,10 @@ $(document).ready(function() {
   $('#enemy').click(function () {
     count += 1;
 
+    if (count == 1) {
+      $("#leona").css("background","url('");
+      setTimeout(function(){ $("#leona").css("background","url('https://imagink.github.io/img/front.png')"); }, 3020);
+    }
     if (count == 5) {
       // come code
       $("#enemy").hide();
@@ -136,11 +140,11 @@ $(document).keydown(function(e) {
       break;
 
         case 39: // right
+        $(".leona").css("background", "url('https://imagink.github.io/img/spritesheetside.gif')");
+        $(".leona").css("background-size","110px 285px");
         $('#leona').animate({
         'marginLeft' : '+='+Speed+"px" //moves right
         }, 'fast', 'linear');
-         $(".leona").css("background", "url('https://imagink.github.io/img/spritesheetside.gif')");
-        $(".leona").css("background-size","110px 285px");
         break;
 
         case 40: // down
