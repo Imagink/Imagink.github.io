@@ -181,8 +181,8 @@ $(document).keydown(function(e) {
 });
 
 $(document).keyup(function(e) {
-    var Speed = 50;
-    var Drift = 50;
+    var Speed = 30;
+    var Drift = 30;
     switch(e.which) {
       case 37: // left
         $(".leona").css("background","url('https://imagink.github.io/img/left.png')");
