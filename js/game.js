@@ -106,10 +106,13 @@ $(document).ready(function() {
   $('#enemy').click(function () {
     count += 1;
 
-    if (count == 1) {
-      $("#leona").css("background","url('");
-      setTimeout(function(){ $("#leona").css("background","url('https://imagink.github.io/img/front.png')"); }, 3020);
-    }
+    //if (count == 1) {
+      //$("#leona").css("background","url('http://orig07.deviantart.net/22cf/f/2016/315/e/0/stab_by_peachyfiesta-dao329i.gif')");
+      //$(".leona").css("background-size","110px 285px");
+      //$(".leona").css("background-position","50% 50%");
+      //$(".leona").css("background-repeat","no-repeat");
+      //setTimeout(function(){ $("#leona").css("background","url('https://imagink.github.io/img/front.png')"); }, 3020);
+    //}
     if (count == 5) {
       // come code
       $("#enemy").hide();
@@ -124,35 +127,43 @@ $(document).keydown(function(e) {
     var Drift = 50;
     switch(e.which) {
       case 37: // left
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetleft.gif')");
+        $(".leona").css("background-size","110px 285px");
+        //$(".leona").css("background-position","0px 193px");
+        //$(".leona").css("background-repeat","no-repeat");
         $('#leona').animate({
         'marginLeft' : '-='+Speed+"px" //moves right
         }, 'fast', 'linear');
-        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetleft.gif')");
-        $(".leona").css("background-size","110px 285px");
       break;
 
       case 38: // up
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetback.gif')");
+        $(".leona").css("background-size","110px 285px");
+        //$(".leona").css("background-position","0px 193px");
+        //$(".leona").css("background-repeat","no-repeat");
         $('#leona').animate({
         'marginTop' : '-='+Drift+"px"
         }, 'fast', 'linear'); 
-        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetback.gif')");
-        $(".leona").css("background-size","110px 285px");
       break;
 
         case 39: // right
         $(".leona").css("background", "url('https://imagink.github.io/img/spritesheetside.gif')");
         $(".leona").css("background-size","110px 285px");
+        //$(".leona").css("background-position","0px 193px");
+        //$(".leona").css("background-repeat","no-repeat");
         $('#leona').animate({
         'marginLeft' : '+='+Speed+"px" //moves right
         }, 'fast', 'linear');
         break;
 
         case 40: // down
+        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetshort.gif')");
+        $(".leona").css("background-size","110px 285px");
+        //$(".leona").css("background-position","0px 193px");
+        //$(".leona").css("background-repeat","no-repeat");
         $('#leona').animate({
         'marginTop' : '+='+Drift+"px"
         }, 'fast', 'linear');
-        $(".leona").css("background","url('https://imagink.github.io/img/spritesheetshort.gif')");
-        $(".leona").css("background-size","110px 285px");
         break;
 
         default: return; // exit this handler for other keys
@@ -164,5 +175,7 @@ function randomIntFromInterval(min,max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
+
+ //setTimeout(function(){ $("#leona").css("background","url('https://imagink.github.io/img/front.png')"); }, 1000)
 
 });

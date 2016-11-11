@@ -18,7 +18,7 @@
 }
 
 #gamebody {
-  background: url("https://imagink.github.io/img/bedscnene.png");
+  background: url("http://i39.servimg.com/u/f39/17/72/50/13/untitl10.jpg");
     background-size: cover;
   background-repeat: repeat-x;
 }
@@ -155,12 +155,35 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   height: 285px;
   background: url("https://imagink.github.io/img/front.png");
   background-size: cover;
+  /*background-position: 0px 193px;
+  background-repeat: no-repeat;*/
   margin-top: 500px;
 }
 
 /*img {
   width: 30%
 }*/
+
+.enemy {
+  width: 188px;
+  height: 325px;
+  background: url("https://8bitgamedesign.files.wordpress.com/2013/04/hobo-sprite.png");
+   background-size: cover;
+   position: fixed;
+   left: 29%;
+   bottom: 20%;
+}
+
+.deadenemy {
+  width: 188px;
+  height: 325px;
+  background: url("http://orig00.deviantart.net/825e/f/2012/363/0/c/angel_of_death_sprite_by_blzofozz-d5pm43h.png");
+   background-size: cover;
+   position: fixed;
+   left: 29%;
+   bottom: 20%;
+   display: none;
+}
 
 .placeholder {
   width: 210px;
@@ -183,23 +206,10 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   display: none;
 }
 
-.enemy {
-  width: 210px;
-  height: 210px;
-  background: url("https://8bitgamedesign.files.wordpress.com/2013/04/hobo-sprite.png");
-   background-size: cover;
+.try {
    position: fixed;
-   left: 45%;
-   bottom: 5%;
+  top: 71%;
+  left: 0%;
+  font-size: 50px;
 }
 
-.deadenemy {
-  width: 210px;
-  height: 210px;
-  background: url("http://orig00.deviantart.net/825e/f/2012/363/0/c/angel_of_death_sprite_by_blzofozz-d5pm43h.png");
-   background-size: cover;
-   position: fixed;
-   left: 45%;
-   bottom: 5%;
-   display: none;
-}
