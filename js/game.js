@@ -180,12 +180,12 @@ $(document).keydown(function(e) {
     e.preventDefault(); // prevent the default action (scroll / move caret)
 });
 
-(document).keyup(function(e) {
+$(document).keyup(function(e) {
     var Speed = 50;
     var Drift = 50;
     switch(e.which) {
       case 37: // left
-        $(".leona").css("background","url('https://imagink.github.io/img/front.png')");
+        $(".leona").css("background","url('https://imagink.github.io/img/left.png')");
         $(".leona").css("background-size","110px 285px");
         //$(".leona").css("background-position","0px 193px");
         //$(".leona").css("background-repeat","no-repeat");
@@ -195,7 +195,7 @@ $(document).keydown(function(e) {
       break;
 
       case 38: // up
-        $(".leona").css("background","url('https://imagink.github.io/img/front.png')");
+        $(".leona").css("background","url('https://imagink.github.io/img/back.png')");
         $(".leona").css("background-size","110px 285px");
         //$(".leona").css("background-position","0px 193px");
         //$(".leona").css("background-repeat","no-repeat");
@@ -205,7 +205,7 @@ $(document).keydown(function(e) {
       break;
 
         case 39: // right
-        $(".leona").css("background", "url('https://imagink.github.io/img/front.png')");
+        $(".leona").css("background", "url('https://imagink.github.io/img/right.png')");
         $(".leona").css("background-size","110px 285px");
         //$(".leona").css("background-position","0px 193px");
         //$(".leona").css("background-repeat","no-repeat");
